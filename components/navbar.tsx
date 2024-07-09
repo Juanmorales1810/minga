@@ -22,7 +22,7 @@ import {
 export const Navbar = () => {
 
   return (
-    <NextUINavbar maxWidth="xl" shouldHideOnScroll>
+    <NextUINavbar isBlurred={false} maxWidth="xl" shouldHideOnScroll>
       <NavbarContent className="basis-1/5 sm:basis-full" justify="center">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
