@@ -6,20 +6,20 @@ import { fontMono } from "@/config/fonts";
 import { Image } from "@nextui-org/image";
 import { Link } from "@nextui-org/link";
 import clsx from "clsx";
-import { WhatsAppLogo } from "@/components/icons";
+import { LinkedIn, WhatsAppLogo } from "@/components/icons";
 
 export default function Home() {
   const words = ["mejores", "lindas", "hermosas", "rápidas", "seguras"];
   return (
-    <section className="flex flex-col items-center justify-center gap-4">
+    <section className="flex flex-col items-center w-full justify-center gap-4 px-2">
       <section className="relative h-auto min-h-screen w-full">
-        <div className="flex justify-center items-center w-full h-[calc(100vh-64px)]">
-          <Image radius="none" src="/img/Fotos Minga 2/trenzaestudio-20.webp" alt="logo" width={1920} height={1080} fallbackSrc="https://via.placeholder.com/1920x1080" className="w-[1920px] h-[calc(100vh-64px)] object-cover object-center brightness-[.20]" />
+        <div className="flex justify-center items-center w-full h-screen">
+          <Image radius="none" src="/img/Fotos Minga 2/trenzaestudio-20.webp" alt="logo" width={1920} height={1080} fallbackSrc="https://via.placeholder.com/1920x1080" className="w-screen h-screen object-cover object-center brightness-[.20]" />
         </div>
         <div className="flex flex-col justify-center items-center z-20 absolute bottom-10 inset-0">
           <Image src="/img/logo/Minga PNG.png" alt="logo" fallbackSrc="https://via.placeholder.com/300x200" className="w-[300px] h-[200px]" />
           <h2 className={title({ class: fontMono.className + " z-20 pt-8 text-center", size: "sm" })}>Descubre tu hogar ideal en la naturaleza con Minga</h2>
-          <Button size="sm" as={Link} href="/portfolio" className="bg-[#7CA4DC] mt-4 font-semibold text-black">Contactanos</Button>
+          <Button variant="shadow" endContent={<WhatsAppLogo className="w-6 h-6 fill-white" />} size="md" as={Link} href="https://wa.me/+56940006843" className="mt-4 font-bold">Contactanos</Button>
         </div>
       </section>
       <section className="py-8">
@@ -33,7 +33,7 @@ export default function Home() {
           <h2 className={title({ class: fontMono.className + " text-center", size: "md" })}>Diseño y Sostenibilidad</h2>
           <p className="text-center text-2xl text-pretty">Explora cómo cada hogar <strong className={fontMono.className}>Minga</strong> combina innovación arquitectónica con sostenibilidad ambiental</p>
         </div>
-        <div className="flex flex-wrap justify-between items-start w-full max-w-5xl gap-6 pt-4">
+        <div className="flex flex-wrap justify-center items-start w-full max-w-5xl gap-6 pt-4 md:justify-between">
           <article className="flex flex-col justify-center items-center gap-2 w-72">
             <header>
               <h3 className={clsx(
@@ -79,13 +79,13 @@ export default function Home() {
         </div>
       </section>
       <section className="flex justify-center items-center py-8 w-full">
-        <div className={title({ class: fontMono.className + " font-medium z-20 text-center" })}>
+        <div className={clsx("font-medium z-20 text-center text-2xl md:text-5xl", fontMono.className)}>
           Hacemos casas
-          <FlipWords className={title({ class: fontMono.className + " font-bold drop-shadow-[0_0px_8px_rgba(200,255,255,0.65)]", })} words={words} /> <br />
+          <FlipWords className={clsx("drop-shadow-[0_0px_8px_rgba(200,255,255,0.65)]", fontMono.className)} words={words} /> <br />
           para tu estilo de vida.
         </div>
       </section>
-      <section className="relative w-full max-w-2xl mx-auto">
+      <section className="w-full max-w-4xl mx-auto">
         <GallerySwiper />
       </section>
       <section className="flex flex-col justify-center items-center w-full max-w-5xl py-8">
@@ -93,29 +93,29 @@ export default function Home() {
         <p className="text-2xl text-center w-full max-w-2xl pt-6">Escucha directamente a aquellos que han convertido su visión en realidad con nosotros y ahora disfrutan de la vida en sus hogares <strong className={fontMono.className}>Minga</strong>.</p>
         <div className="relative flex justify-center items-center w-full max-w-5xl h-96">
           <div className="absolute left-0 bottom-5">
-            <Image src="/img/Fotos Minga/Fotografías Oficiales_-17.webp" alt="logo" fallbackSrc="https://via.placeholder.com/300x200" className="w-[300px] h-[200px]" />
+            <Image src="/img/Fotos Minga/Fotografías Oficiales_-15.webp" alt="logo" fallbackSrc="https://via.placeholder.com/300x200" className="w-[300px] h-[200px] brightness-[.25] md:brightness-100" />
           </div>
           <q className="z-20 text-2xl w-96 text-center font-mono">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa veniam non aperiam cumque suscipit porro molestias dolorum vitae a ducimus.</q>
           <div className="absolute right-0 top-5">
-            <Image src="/img/home/istockphoto.jpg" alt="logo" fallbackSrc="https://via.placeholder.com/300x200" className="w-[300px] h-[200px]" />
+            <Image src="/img/home/istockphoto.jpg" alt="logo" fallbackSrc="https://via.placeholder.com/300x200" className="w-[300px] h-[200px] brightness-[.25] md:brightness-100" />
           </div>
         </div>
         <div className="relative flex justify-center items-center w-full max-w-5xl h-96">
           <div className="absolute left-0 top-5">
-            <Image src="/img/Fotos Minga/Fotografías Oficiales_-17.webp" alt="logo" fallbackSrc="https://via.placeholder.com/300x200" className="w-[300px] h-[200px]" />
+            <Image src="/img/Fotos Minga/Fotografías Oficiales_-3.webp" alt="logo" fallbackSrc="https://via.placeholder.com/300x200" className="w-[300px] h-[200px] brightness-[.25] md:brightness-100" />
           </div>
           <q className="z-20 text-2xl w-96 text-center font-mono">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa veniam non aperiam cumque suscipit porro molestias dolorum vitae a ducimus.</q>
           <div className="absolute right-0 bottom-5">
-            <Image src="/img/home/istockphoto.jpg" alt="logo" fallbackSrc="https://via.placeholder.com/300x200" className="w-[300px] h-[200px]" />
+            <Image src="/img/home/istockphoto.jpg" alt="logo" fallbackSrc="https://via.placeholder.com/300x200" className="w-[300px] h-[200px] brightness-[.25] md:brightness-100" />
           </div>
         </div>
         <div className="relative flex justify-center items-center w-full max-w-5xl h-96">
           <div className="absolute left-0 bottom-5">
-            <Image src="/img/Fotos Minga/Fotografías Oficiales_-17.webp" alt="logo" fallbackSrc="https://via.placeholder.com/300x200" className="w-[300px] h-[200px]" />
+            <Image src="/img/Fotos Minga/Fotografías Oficiales_-23.webp" alt="logo" fallbackSrc="https://via.placeholder.com/300x200" className="w-[300px] h-[200px] brightness-[.25] md:brightness-100" />
           </div>
           <q className="z-20 text-2xl w-96 text-center font-mono">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa veniam non aperiam cumque suscipit porro molestias dolorum vitae a ducimus.</q>
           <div className="absolute right-0 top-5">
-            <Image src="/img/home/istockphoto.jpg" alt="logo" fallbackSrc="https://via.placeholder.com/300x200" className="w-[300px] h-[200px]" />
+            <Image src="/img/home/istockphoto.jpg" alt="logo" fallbackSrc="https://via.placeholder.com/300x200" className="w-[300px] h-[200px] brightness-[.25] md:brightness-100" />
           </div>
         </div>
       </section>
@@ -146,14 +146,14 @@ export default function Home() {
         </div>
       </section>
       <section className="py-8">
-        <div className="w-full p-4 text-center bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
-          <h5 className={clsx(fontMono.className, "mb-2 text-3xl font-bold text-gray-900 dark:text-white")}>Diseña tu hogar con Minga hoy</h5>
+        <div className="w-full p-4 text-center bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-black/30 backdrop-blur-sm dark:border-zinc-700/30">
+          <h4 className={clsx(fontMono.className, "mb-2 text-3xl font-bold text-gray-900 dark:text-white")}>Diseña tu hogar con Minga hoy</h4>
           <p className="mb-5 text-base text-gray-500 sm:text-lg dark:text-gray-400">Detalles claros sobre cómo contactar a Minga por WhatsApp, correo electrónico y a través de un formulario de contacto en línea.
           </p>
           <div className="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse">
             <Button
               as={Link}
-              href="https://wa.me/56912345678"
+              href="https://wa.me/+56940006843"
               className="w-full sm:w-auto bg-green hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-green-700 dark:hover:bg-green-800 dark:focus:ring-green-700"
               size="lg"
               startContent={<WhatsAppLogo className="w-7 h-7 fill-white" />}
@@ -163,7 +163,18 @@ export default function Home() {
                 <div className="-mt-1 font-sans text-sm font-semibold">WhatsApp</div>
               </div>
             </Button>
-
+            <Button
+              as={Link}
+              href="https://www.linkedin.com/company/casas-minga-spa/?originalSubdomain=cl"
+              className="w-full sm:w-auto bg-green hover:bg-cyan-700 focus:ring-4 focus:outline-none focus:ring-cyan-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-cyan-700 dark:hover:bg-cyan-800 dark:focus:ring-cyan-700"
+              size="lg"
+              startContent={<LinkedIn className="w-7 h-7 fill-white" />}
+            >
+              <div className="text-left rtl:text-right">
+                <div className="mb-1 text-xs">Contáctanos en</div>
+                <div className="-mt-1 font-sans text-sm font-semibold">LinkedIn</div>
+              </div>
+            </Button>
           </div>
         </div>
       </section>

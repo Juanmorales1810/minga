@@ -95,7 +95,7 @@ export default function GallerySwiper() {
             >
                 {slides.map((slide, index) => (
                     <SwiperSlide key={index}>
-                        <Image src={slide} width={700} height={700} className='w-[700px] h-[700px]' />
+                        <Image src={slide} width={1200} height={700} className='w-full h-[400px] md:h-[700px] object-cover' />
                     </SwiperSlide>
                 ))}
             </Swiper>
