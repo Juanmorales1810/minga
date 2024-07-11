@@ -11,7 +11,7 @@ import { LinkedIn, WhatsAppLogo } from "@/components/icons";
 export default function Home() {
   const words = ["mejores", "lindas", "hermosas", "rápidas", "seguras"];
   return (
-    <section className="flex flex-col items-center w-full justify-center gap-4 px-2">
+    <section className="flex flex-col items-center w-full justify-center gap-4">
       <section className="relative h-auto min-h-screen w-full">
         <div className="flex justify-center items-center w-full h-screen">
           <Image radius="none" src="/img/Fotos Minga 2/trenzaestudio-20.webp" alt="logo" width={1920} height={1080} fallbackSrc="https://via.placeholder.com/1920x1080" className="w-screen h-screen object-cover object-center brightness-[.20]" />
@@ -22,13 +22,13 @@ export default function Home() {
           <Button variant="shadow" endContent={<WhatsAppLogo className="w-6 h-6 fill-white" />} size="md" as={Link} href="https://wa.me/+56940006843" className="mt-4 font-bold">Contactanos</Button>
         </div>
       </section>
-      <section className="py-8">
+      <section className="py-8 px-2">
         <div className="flex flex-col justify-center items-center w-full max-w-3xl gap-4">
           <h1 className={title({ class: fontMono.className + " text-center", size: "md" })}>Bienvenido a Minga</h1>
           <p className="text-center text-2xl text-pretty">En <strong className={fontMono.className}>Minga</strong>, nos especializamos en el diseño y la construcción de casas únicas en entornos naturales impresionantes. Nuestro compromiso es brindarte un hogar que no solo sea estético y funcional sino que también armonice con el paisaje, respetando la belleza y la integridad del medio ambiente. Desde La Serena, Chile, hasta cualquier rincón del país, estamos aquí para construir el hogar de tus sueños.</p>
         </div>
       </section>
-      <section className="flex flex-col justify-center items-center w-full gap-4 py-8">
+      <section className="flex flex-col justify-center items-center w-full gap-4 py-8 px-2">
         <div className="flex flex-col justify-center items-center w-full max-w-3xl gap-4">
           <h2 className={title({ class: fontMono.className + " text-center", size: "md" })}>Diseño y Sostenibilidad</h2>
           <p className="text-center text-2xl text-pretty">Explora cómo cada hogar <strong className={fontMono.className}>Minga</strong> combina innovación arquitectónica con sostenibilidad ambiental</p>
@@ -78,17 +78,17 @@ export default function Home() {
           </article>
         </div>
       </section>
-      <section className="flex justify-center items-center py-8 w-full">
+      <section className="flex justify-center items-center py-8 w-full px-2">
         <div className={clsx("font-medium z-20 text-center text-2xl md:text-5xl", fontMono.className)}>
           Hacemos casas
           <FlipWords className={clsx("drop-shadow-[0_0px_8px_rgba(200,255,255,0.65)]", fontMono.className)} words={words} /> <br />
           para tu estilo de vida.
         </div>
       </section>
-      <section className="w-full max-w-4xl mx-auto">
+      <section className="w-full max-w-4xl mx-auto px-2">
         <GallerySwiper />
       </section>
-      <section className="flex flex-col justify-center items-center w-full max-w-5xl py-8">
+      <section className="flex flex-col justify-center items-center w-full max-w-5xl py-8 px-2">
         <h2 className={title({ class: fontMono.className + " text-center", size: "md" })}>Lo que dicen nuestros clientes</h2>
         <p className="text-2xl text-center w-full max-w-2xl pt-6">Escucha directamente a aquellos que han convertido su visión en realidad con nosotros y ahora disfrutan de la vida en sus hogares <strong className={fontMono.className}>Minga</strong>.</p>
         <div className="relative flex justify-center items-center w-full max-w-5xl h-96">
@@ -119,7 +119,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="flex flex-col justify-center items-center gap-4 py-8">
+      <section className="flex flex-col justify-center items-center gap-4 py-8 px-2">
         <h2 className={title({ class: fontMono.className + " text-center pb-6", size: "md" })}>Tu casa en tres pasos</h2>
         <div className="flex flex-col gap-6">
           <div className="flex flex-row justify-center items-center w-full max-w-4xl">
@@ -145,7 +145,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="py-8">
+      <section className="py-8 px-2">
         <div className="w-full p-4 text-center bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-black/30 backdrop-blur-sm dark:border-zinc-700/30">
           <h4 className={clsx(fontMono.className, "mb-2 text-3xl font-bold text-gray-900 dark:text-white")}>Diseña tu hogar con Minga hoy</h4>
           <p className="mb-5 text-base text-gray-500 sm:text-lg dark:text-gray-400">Detalles claros sobre cómo contactar a Minga por WhatsApp, correo electrónico y a través de un formulario de contacto en línea.
