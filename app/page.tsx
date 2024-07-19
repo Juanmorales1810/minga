@@ -11,8 +11,9 @@ import { LinkedIn, WhatsAppLogo } from "@/components/icons";
 export default function Home() {
   const words = ["mejores", "lindas", "hermosas", "rápidas", "seguras"];
   return (
-    <section className="flex flex-col items-center w-full justify-center gap-4">
-      <section className="relative h-auto min-h-screen w-full">
+    <section className="flex flex-col items-center w-full justify-center min-h-[calc(100vh-100px)] gap-4">
+      <p className="text-2xl">&#128679;Esta pagina esta en proceso&#128679;</p>
+      {/* <section className="relative h-auto min-h-screen w-full">
         <div className="flex justify-center items-center w-full h-screen">
           <Image radius="none" src="/img/Fotos Minga 2/trenzaestudio-20.webp" alt="logo" width={1920} height={1080} fallbackSrc="https://via.placeholder.com/1920x1080" className="w-screen h-screen object-cover object-center brightness-[.20]" />
         </div>
@@ -177,7 +178,7 @@ export default function Home() {
             </Button>
           </div>
         </div>
-      </section>
+      </section> */}
     </section>
   );
 }
