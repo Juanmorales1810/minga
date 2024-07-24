@@ -39,7 +39,7 @@ export default function RootLayout({
       <body
         className="min-h-screen bg-background antialiased font-Futura"
       >
-        <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
+        <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <div className="relative flex flex-col bg-zinc-50">
             <Navbar />
             <main className="mx-auto flex-grow z-10">
