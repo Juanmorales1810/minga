@@ -17,54 +17,19 @@ import { EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
 import { Image } from '@nextui-org/image';
 
 const slides = [
-    '/img/Fotos Minga 2/trenzaestudio-2.webp',
-    '/img/Fotos Minga 2/trenzaestudio-3.webp',
     '/img/Fotos Minga 2/trenzaestudio-4.webp',
     '/img/Fotos Minga 2/trenzaestudio-5.webp',
     '/img/Fotos Minga 2/trenzaestudio-6.webp',
-    '/img/Fotos Minga 2/trenzaestudio-7.webp',
-    '/img/Fotos Minga 2/trenzaestudio-8.webp',
-    '/img/Fotos Minga 2/trenzaestudio-9.webp',
-    '/img/Fotos Minga 2/trenzaestudio-10.webp',
     '/img/Fotos Minga 2/trenzaestudio-11.webp',
-    '/img/Fotos Minga 2/trenzaestudio-12.webp',
-    // '/img/Fotos Minga 2/trenzaestudio-13.webp',
-    '/img/Fotos Minga 2/trenzaestudio-14.webp',
     '/img/Fotos Minga 2/trenzaestudio-15.webp',
-    '/img/Fotos Minga 2/trenzaestudio-16.webp',
-    '/img/Fotos Minga 2/trenzaestudio-17.webp',
-    '/img/Fotos Minga 2/trenzaestudio-18.webp',
-    // '/img/Fotos Minga 2/trenzaestudio-19.webp',
-    '/img/Fotos Minga 2/trenzaestudio-20.webp',
-    // '/img/Fotos Minga 2/trenzaestudio-21.webp',
-    // '/img/Fotos Minga 2/trenzaestudio-22.webp',
-    '/img/Fotos Minga 2/trenzaestudio-23.webp',
-    '/img/Fotos Minga/Fotografías Oficiales_.webp',
-    '/img/Fotos Minga/Fotografías Oficiales_-2.webp',
-    // '/img/Fotos Minga/Fotografías Oficiales_-3.webp',
-    '/img/Fotos Minga/Fotografías Oficiales_-4.webp',
-    // '/img/Fotos Minga/Fotografías Oficiales_-5.webp',
-    '/img/Fotos Minga/Fotografías Oficiales_-6.webp',
-    '/img/Fotos Minga/Fotografías Oficiales_-7.webp',
-    '/img/Fotos Minga/Fotografías Oficiales_-8.webp',
+    '/img/Fotos Minga 2/Fotos Minga 2022 Pan de Azucar-15.webp',
+    '/img/Fotos Minga 2/Fotos Minga 2022 Pan de Azucar-19.webp',
+    '/img/Fotos Minga 2/Fotos Minga 2022 Pan de Azucar-20.webp',
+    '/img/Fotos Minga 2/Fotos Minga 2022 Pan de Azucar.webp',
     '/img/Fotos Minga/Fotografías Oficiales_-9.webp',
-    '/img/Fotos Minga/Fotografías Oficiales_-10.webp',
-    '/img/Fotos Minga/Fotografías Oficiales_-11.webp',
-    // '/img/Fotos Minga/Fotografías Oficiales_-12.webp',
-    '/img/Fotos Minga/Fotografías Oficiales_-13.webp',
     '/img/Fotos Minga/Fotografías Oficiales_-14.webp',
-    '/img/Fotos Minga/Fotografías Oficiales_-15.webp',
-    '/img/Fotos Minga/Fotografías Oficiales_-16.webp',
     '/img/Fotos Minga/Fotografías Oficiales_-17.webp',
-    '/img/Fotos Minga/Fotografías Oficiales_-18.webp',
-    '/img/Fotos Minga/Fotografías Oficiales_-19.webp',
-    // '/img/Fotos Minga/Fotografías Oficiales_-20.webp',
-    '/img/Fotos Minga/Fotografías Oficiales_-21.webp',
     '/img/Fotos Minga/Fotografías Oficiales_-22.webp',
-    '/img/Fotos Minga/Fotografías Oficiales_-23.webp',
-    // '/img/Fotos Minga/Fotografías Oficiales_-24.webp',
-    '/img/Fotos Minga/Fotografías Oficiales_-25.webp',
-    '/img/Fotos Minga/Fotografías Oficiales_-26.webp',
 ];
 
 export default function GallerySwiper() {
@@ -95,7 +60,7 @@ export default function GallerySwiper() {
             >
                 {slides.map((slide, index) => (
                     <SwiperSlide key={index}>
-                        <Image src={slide} width={1200} height={700} className='w-full h-[400px] md:h-[700px] object-cover' />
+                        <Image radius='none' src={slide} alt='Fotos de la galería' width={1200} height={700} className='w-full h-[400px] md:h-[700px] object-cover' />
                     </SwiperSlide>
                 ))}
             </Swiper>
