@@ -12,7 +12,7 @@ export default function Home() {
           <Image radius="none" src="/img/Fotos Minga/Fotografías Oficiales_-5.webp" alt="logo" width={1920} height={1080} fallbackSrc="https://via.placeholder.com/1920x1080" className="w-screen h-screen object-cover object-center brightness-75" />
         </div>
         <div className="flex flex-col justify-around items-end z-20 w-full h-screen px-6 absolute bottom-10 inset-0 md:pr-44">
-          <Image radius="none" src="/img/logo/MINGA LOGO NEGRO PNG.png" alt="logo" fallbackSrc="https://via.placeholder.com/300x200" className="w-[150px] h-[100px] md:w-[200px] md:h-[150px] " />
+          <Image radius="none" src="/img/logo/MINGA LOGO NEGRO PNG.png" alt="logo" fallbackSrc="https://via.placeholder.com/300x200" className="w-[150px] h-[100px]" />
           <div className="flex flex-col items-end md:w-1/3">
             <h2 className="z-20 pt-8 pl-6 text-xl font-bold text-right md:text-3xl">Viviendas diseñadas para ofrecer confort y estilo en cada rincón</h2>
             <Button variant="shadow" endContent={<WhatsAppLogo className="w-6 h-6 fill-white" />} size="md" as={Link} href="https://wa.me/+56940006843" className="mt-4 font-bold w-44 bg-zinc-950">Contactanos</Button>
@@ -62,7 +62,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="w-full max-w-4xl mx-auto md:py-8">
+      <section className="w-full mx-auto">
         <GallerySwiper />
       </section>
       <section className="relative flex items-start w-full h-screen">

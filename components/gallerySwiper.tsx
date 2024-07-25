@@ -60,7 +60,7 @@ export default function GallerySwiper() {
             >
                 {slides.map((slide, index) => (
                     <SwiperSlide key={index}>
-                        <Image radius='none' src={slide} alt='Fotos de la galería' width={1200} height={700} className='w-full h-[400px] md:h-[700px] object-cover' />
+                        <Image radius='none' src={slide} alt='Fotos de la galería' className='w-full h-[400px] md:h-full object-cover' />
                     </SwiperSlide>
                 ))}
             </Swiper>
