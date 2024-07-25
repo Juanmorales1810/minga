@@ -37,15 +37,11 @@ export default function RootLayout({
     <html suppressHydrationWarning lang="es">
       <head />
       <body
-        className={clsx(
-          "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable,
-        )}
+        className="min-h-screen bg-background antialiased font-Futura"
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-          <div className="relative flex flex-col">
-            <div className="absolute inset-0 z-0 h-full w-full bg-zinc-950 bg-[linear-gradient(to_right,#18181b_1px,transparent_1px),linear-gradient(to_bottom,#18181b_1px,transparent_1px)] bg-[size:6rem_4rem]"></div>
-            {/* <Navbar /> */}
+          <div className="relative flex flex-col bg-zinc-50">
+            <Navbar />
             <main className="mx-auto flex-grow z-10">
               {children}
             </main>
