@@ -6,15 +6,16 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
-// import 'swiper/css/effect-coverflow';
+import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import '@/styles/globals.css';
 
 // import required modules
-import { EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
-import { Image } from '@nextui-org/image';
+import { Autoplay, EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
+import Image from 'next/image';
+// import { Image } from '@nextui-org/image';
 
 const slides = [
     '/img/Fotos Minga 2/trenzaestudio-4.webp',
@@ -31,6 +32,13 @@ const slides = [
     '/img/Fotos Minga/Fotografías Oficiales_-17.webp',
     '/img/Fotos Minga/Fotografías Oficiales_-22.webp',
 ];
+interface GallerySwiperProps {
+    effectCoverflow?: boolean;
+    pagination?: boolean;
+    navigation?: boolean;
+    autoplay?: boolean;
+    images: string[];
+}
 
 export default function GallerySwiper() {
     return (
@@ -53,14 +61,18 @@ export default function GallerySwiper() {
                     modifier: 1,
                     slideShadows: true,
                 }}
+                autoplay={{
+                    delay: 3000,
+                    disableOnInteraction: false,
+                }}
                 navigation={true}
                 pagination={true}
-                modules={[EffectCoverflow, Pagination, Navigation]}
+                modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
                 className="mySwiper"
             >
                 {slides.map((slide, index) => (
                     <SwiperSlide key={index}>
-                        <Image radius='none' src={slide} alt='Fotos de la galería' className='w-full h-[400px] md:h-full object-cover' />
+                        <Image src={slide} alt='Fotos de la galería' width={1920} height={1080} className='w-full h-[400px] md:h-screen object-fill object-center' priority={true} />
                     </SwiperSlide>
                 ))}
             </Swiper>
