@@ -3,27 +3,44 @@ import { Image } from "@nextui-org/image";
 import { Link } from "@nextui-org/link";
 import { LinkedIn, WhatsAppLogo } from "@/components/icons";
 import GallerySwiper from "@/components/gallerySwiper";
+import BackgroundSwipe from "@/components/backgroundswipe";
+import { TextGenerateEffect } from "@/components/text-generate-effect";
 
 export default function Home() {
+  const slides = [
+    '/img/Fotos Minga 2/trenzaestudio-4.webp',
+    '/img/Fotos Minga 2/trenzaestudio-5.webp',
+    '/img/Fotos Minga 2/trenzaestudio-6.webp',
+    '/img/Fotos Minga 2/trenzaestudio-11.webp',
+    '/img/Fotos Minga 2/trenzaestudio-15.webp',
+    '/img/Fotos Minga 2/Fotos Minga 2022 Pan de Azucar-15.webp',
+    '/img/Fotos Minga 2/Fotos Minga 2022 Pan de Azucar-19.webp',
+    '/img/Fotos Minga 2/Fotos Minga 2022 Pan de Azucar-20.webp',
+    '/img/Fotos Minga 2/Fotos Minga 2022 Pan de Azucar.webp',
+    '/img/Fotos Minga/Fotografías Oficiales_-9.webp',
+    '/img/Fotos Minga/Fotografías Oficiales_-14.webp',
+    '/img/Fotos Minga/Fotografías Oficiales_-17.webp',
+    '/img/Fotos Minga/Fotografías Oficiales_-22.webp',
+  ];
   return (
     <section className="flex flex-col items-center w-full justify-center min-h-[calc(100vh-100px)]">
       <section className="relative h-auto min-h-screen w-full">
         <div className="flex justify-center items-center w-full h-screen">
-          <Image radius="none" src="/img/Fotos Minga/Fotografías Oficiales_-5.webp" alt="logo" width={1920} height={1080} fallbackSrc="https://via.placeholder.com/1920x1080" className="w-screen h-screen object-cover object-center brightness-75" />
+          <BackgroundSwipe />
         </div>
         <div className="flex flex-col justify-around items-end z-20 w-full h-screen px-6 absolute bottom-10 inset-0 md:pr-44">
           <Image radius="none" src="/img/logo/MINGA LOGO NEGRO PNG.png" alt="logo" fallbackSrc="https://via.placeholder.com/300x200" className="w-[150px] h-[100px]" />
           <div className="flex flex-col items-end md:w-1/3">
-            <h2 className="z-20 pt-8 pl-6 text-xl font-bold text-right md:text-3xl">Viviendas diseñadas para ofrecer confort y estilo en cada rincón</h2>
+            <h2 className="z-20 pt-8 pl-6 text-xl font-bold text-right md:text-4xl">Viviendas diseñadas para ofrecer confort y estilo en cada rincón</h2>
             <Button variant="shadow" endContent={<WhatsAppLogo className="w-6 h-6 fill-white" />} size="md" as={Link} href="https://wa.me/+56940006843" className="mt-4 font-bold w-44 bg-zinc-950">Contactanos</Button>
           </div>
         </div>
       </section>
       <section className="flex justify-center items-center px-8 h-screen">
         <div className="flex flex-col justify-center items-end w-full max-w-3xl pl-16 gap-4 text-zinc-950">
-          {/* <h1 className={title({ class: fontMono.className + " text-right", size: "md" })}>Bienvenido a Minga</h1> */}
-          <p className="text-right text-xl text-pretty font-bold pb-6 sm:text-2xl md:text-4xl">En Minga, nos especializamos en el diseño y la construcción de casas únicas en entornos naturales impresionantes.</p>
-          <p className="text-right text-lg text-pretty font-medium text-zinc-700 sm:text-xl md:text-2xl">Nuestro compromiso es brindarte un hogar que no solo sea estético y funcional sino que también armonice con el paisaje, respetando la belleza y la integridad del medio ambiente. Desde La Serena, Chile, hasta cualquier rincón del país, estamos aquí para construir el hogar de tus sueños</p>
+          <h1 className="text-xl text-right">Bienvenido a Minga</h1>
+          <TextGenerateEffect className="text-right text-xl text-pretty font-bold pb-6 sm:text-2xl md:text-4xl" words="En Minga, nos especializamos en el diseño y la construcción de casas únicas en entornos naturales impresionantes." />
+          <TextGenerateEffect delay={3000} className="text-right text-lg text-pretty font-medium text-zinc-700 sm:text-xl md:text-2xl" words="Nuestro compromiso es brindarte un hogar que no solo sea estético y funcional sino que también armonice con el paisaje, respetando la belleza y la integridad del medio ambiente. Desde La Serena, Chile, hasta cualquier rincón del país, estamos aquí para construir el hogar de tus sueños" />
         </div>
       </section>
       <section className="relative flex items-end w-full h-screen">
@@ -62,7 +79,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="w-full mx-auto">
+      <section className="w-full md:h-screen mx-auto">
         <GallerySwiper />
       </section>
       <section className="relative flex items-start w-full h-screen">
