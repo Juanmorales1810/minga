@@ -37,10 +37,10 @@ export default function RootLayout({
     <html suppressHydrationWarning lang="es">
       <head />
       <body
-        className="min-h-screen bg-background antialiased font-Futura"
+        className="min-h-screen bg-background antialiased font-Avenir"
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-          <div className="relative flex flex-col bg-zinc-50">
+          <div className="relative flex flex-col bg-[#3f3f41]">
             <Navbar />
             <main className="mx-auto flex-grow z-10">
               {children}
