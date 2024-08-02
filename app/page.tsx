@@ -27,10 +27,10 @@ export default function Home() {
     <section className="flex flex-col items-center w-full justify-center min-h-[calc(100vh-100px)]">
       <section className="relative h-auto min-h-screen w-full">
         <div className="flex justify-center items-center w-full h-screen">
-          <Image src="/img/background/Portada.avif" alt="Imagen principal de Minga" width={1920} height={1080} className="w-screen h-screen object-cover object-center" />
+          <Image src="/img/background/Portada.avif" alt="Imagen principal de Minga" width={1920} height={1080} className="w-screen h-screen object-cover object-center" priority={true} />
         </div>
         <div className="flex flex-col justify-around items-end z-20 w-full h-screen px-6 absolute bottom-10 inset-0 md:pr-44">
-          <Image src="/img/logo/MINGA LOGO NEGRO PNG.png" alt="logo" width={150} height={100} className="w-[150px] h-[100px]" />
+          <Image src="/img/logo/MINGA LOGO NEGRO PNG.png" alt="logo" width={150} height={100} className="w-[150px] h-[100px]" priority={true} />
           <div className="flex flex-col items-end md:w-1/3">
             <h1 className="z-20 pt-8 pl-6 text-xl font-bold text-right md:text-4xl">Bienvenido a Minga</h1>
             <p className="text-right">
