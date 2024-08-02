@@ -15,30 +15,33 @@ import '@/styles/globals.css';
 // import required modules
 import { Autoplay, EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
 import Image from 'next/image';
-// import { Image } from '@nextui-org/image';
 
 const slides = [
-    '/img/Fotos Minga 2/trenzaestudio-4.webp',
-    '/img/Fotos Minga 2/trenzaestudio-5.webp',
-    '/img/Fotos Minga 2/trenzaestudio-6.webp',
-    '/img/Fotos Minga 2/trenzaestudio-11.webp',
-    '/img/Fotos Minga 2/trenzaestudio-15.webp',
-    '/img/Fotos Minga 2/Fotos Minga 2022 Pan de Azucar-15.webp',
-    '/img/Fotos Minga 2/Fotos Minga 2022 Pan de Azucar-19.webp',
-    '/img/Fotos Minga 2/Fotos Minga 2022 Pan de Azucar-20.webp',
-    '/img/Fotos Minga 2/Fotos Minga 2022 Pan de Azucar.webp',
-    '/img/Fotos Minga/Fotografías Oficiales_-9.webp',
-    '/img/Fotos Minga/Fotografías Oficiales_-14.webp',
-    '/img/Fotos Minga/Fotografías Oficiales_-17.webp',
-    '/img/Fotos Minga/Fotografías Oficiales_-22.webp',
+    '/img/gallery/Arquitectura contemporánea en casa de Coquimbo-compress.webp',
+    '/img/gallery/Arquitectura moderna en vivienda de Coquimbo-compress.webp',
+    '/img/gallery/Casas prefabricadas con diseño único en La Serena-compress.webp',
+    '/img/gallery/Construcción de casas modernas en La Serena-compress.webp',
+    '/img/gallery/Construcción de casas prefabricadas en La Serena-compress.webp',
+    '/img/gallery/Detalles arquitectónicos en hogar de La Serena-compress.webp',
+    '/img/gallery/Detalles arquitectónicos únicos en Matanzas Chile-compress.webp',
+    '/img/gallery/Detalles elegantes en casa moderna de La Serena-compress.webp',
+    '/img/gallery/Diseño de interiores en casa prefabricada-compress.webp',
+    '/img/gallery/Diseño personalizado en vivienda de Matanzas Chile-compress.webp',
+    '/img/gallery/Espacio exterior en vivienda prefabricada de Coquimbo-compress.webp',
+    '/img/gallery/Fachada elegante de casa moderna en La Serena-compress.webp',
+    '/img/gallery/Fachada ventilada en hogar de Coquimbo-compress.webp',
+    '/img/gallery/Hogar acogedor en Coquimbo-compress.webp',
+    '/img/gallery/Hogar acogedor y elegante en Playa Grande Tongoy-compress.webp',
+    '/img/gallery/Hogar con acabados de alta calidad en La Serena-compress.webp',
+    '/img/gallery/Interiores llenos de alma en hogar de Coquimbo-compress.webp',
+    '/img/gallery/Interiores sofisticados en vivienda de Coquimbo-compress.webp',
+    '/img/gallery/Interiores sofisticados en vivienda prefabricada-compress.webp',
+    '/img/gallery/nteriores personalizados en casa de La Serena-compress.webp',
+    '/img/gallery/Sala de estar con diseño y construcción moderna-compress.webp',
+    '/img/gallery/Sala de estar en casa prefabricada de La Serena-compress.webp',
+    '/img/gallery/Terraza con diseño funcional en hogar prefabricado-compress.webp',
+    '/img/gallery/Terraza con vistas al mar en Playa Grande Tongoy-compress.webp',
 ];
-interface GallerySwiperProps {
-    effectCoverflow?: boolean;
-    pagination?: boolean;
-    navigation?: boolean;
-    autoplay?: boolean;
-    images: string[];
-}
 
 export default function GallerySwiper() {
     return (
@@ -72,7 +75,7 @@ export default function GallerySwiper() {
             >
                 {slides.map((slide, index) => (
                     <SwiperSlide key={index}>
-                        <Image src={slide} alt='Fotos de la galería' width={1920} height={1080} className='w-full h-[400px] md:h-screen object-fill object-center' priority={true} />
+                        <Image src={slide} alt='Fotos de la galería' width={1920} height={1080} className='w-full h-[300px] md:h-screen object-cover object-center' priority={true} />
                     </SwiperSlide>
                 ))}
             </Swiper>
