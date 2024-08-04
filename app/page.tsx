@@ -51,8 +51,9 @@ export default function Home() {
       </section>
 
       <section className="flex justify-center items-center w-full px-6 h-screen md:px-0">
-        <div className="flex flex-col justify-center items-end w-full gap-4 pl-36 md:flex-row-reverse md:justify-between md:items-center md:px-40">
-          <TextGenerateEffect className="text-white text-right text-xl text-pretty font-bold pb-6 sm:text-2xl md:text-4xl" words="Hacemos énfasis en la selección de materiales y la calidad del detalle constructivo" />
+        <div className="flex flex-col justify-center items-end w-full gap-4 pl-36 md:px-40">
+          <TextGenerateEffect className="text-white text-right text-xl text-pretty font-bold sm:text-2xl md:text-4xl" words="Hacemos énfasis en la selección de materiales y" />
+          <TextGenerateEffect className="text-white text-right text-xl text-pretty font-bold sm:text-2xl md:text-4xl" words="la calidad del detalle constructivo" />
         </div>
       </section>
       <section className="relative flex items-end w-full h-screen">
