@@ -1,11 +1,10 @@
-import { Button } from "@nextui-org/button";
-// import { Image } from "@nextui-org/image";
-import { Link } from "@nextui-org/link";
-import { InstagramLogo, LinkedIn, MailLogo, MapLogo, WhatsAppLogo } from "@/components/icons";
-import GallerySwiper from "@/components/gallerySwiper";
+import { InstagramLogo, MailLogo, MapLogo, WhatsAppLogo } from "@/components/icons";
 import { TextGenerateEffect } from "@/components/text-generate-effect";
-import Image from "next/image";
+import GallerySwiper from "@/components/gallerySwiper";
 import { Tooltip } from "@nextui-org/tooltip";
+import { Button } from "@nextui-org/button";
+import { Link } from "@nextui-org/link";
+import Image from "next/image";
 
 export default function Home() {
   const slides = [
@@ -29,8 +28,8 @@ export default function Home() {
         <div className="flex justify-center items-center w-full h-screen">
           <Image src="/img/background/Portada.avif" alt="Imagen principal de Minga" width={1920} height={1080} className="w-screen h-screen object-cover object-center" priority={true} />
         </div>
-        <div className="flex flex-col justify-around items-end z-20 w-full h-screen px-6 absolute bottom-10 inset-0 md:pr-44">
-          <Image src="/img/logo/MINGA LOGO NEGRO PNG.png" alt="logo" width={150} height={100} className="w-[150px] h-[100px]" priority={true} />
+        <div className="flex flex-col justify-around items-end z-20 w-full h-screen px-6 absolute bottom-10 inset-0 md:pr-40">
+          <Image src="/img/logo/MINGA LOGO NEGRO PNG.png" alt="logo" width={200} height={100} className="object-cover object-center" priority={true} />
           <div className="flex flex-col items-end md:w-1/3">
             <h1 className="z-20 pt-8 pl-6 text-xl font-bold text-right md:text-4xl">Bienvenido a Minga</h1>
             <p className="text-right">
@@ -41,8 +40,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="flex justify-center items-center px-8 h-screen">
-        <div className="flex flex-col justify-center items-end w-full max-w-5xl gap-4 md:flex-row-reverse md:justify-between md:items-center">
+      <section className="flex justify-center items-center px-8 w-full h-screen md:px-0">
+        <div className="flex flex-col justify-center items-end w-full gap-4 md:flex-row-reverse md:justify-between md:items-center md:px-40">
           <TextGenerateEffect className="text-white text-right text-xl text-pretty font-bold pb-6 sm:text-2xl md:text-4xl" words="Proyecto de alto estándar con identidad única" />
           <Button variant="shadow" endContent={<WhatsAppLogo className="w-6 h-6 fill-white" />} as={Link} href="https://wa.me/+56940006843" className="mt-4 font-bold w-72 bg-zinc-950 md:mt-0">Diseña tu hogar con Minga hoy</Button>
         </div>
@@ -51,14 +50,14 @@ export default function Home() {
         <GallerySwiper />
       </section>
 
-      <section className="flex justify-center items-center w-full px-8 h-screen">
-        <div className="flex flex-col justify-center items-end w-full max-w-5xl gap-4 pl-36 md:flex-row-reverse md:justify-between md:items-center">
+      <section className="flex justify-center items-center w-full px-8 h-screen md:px-0">
+        <div className="flex flex-col justify-center items-end w-full gap-4 pl-36 md:flex-row-reverse md:justify-between md:items-center md:px-40">
           <TextGenerateEffect className="text-white text-right text-xl text-pretty font-bold pb-6 sm:text-2xl md:text-4xl" words="Hacemos énfasis en la selección de materiales y la calidad del detalle constructivo" />
         </div>
       </section>
       <section className="relative flex items-end w-full h-screen">
         <Image src="/img/background/Foto3-compress.webp" alt="Imagen minga de llamado a la acción" width={1920} height={1080} className="w-screen h-screen object-cover object-center brightness-75" />
-        <div className="flex flex-col justify-center items-end z-20 w-full h-screen px-6 absolute bottom-10 inset-0 md:pr-44">
+        <div className="flex flex-col justify-center items-end z-20 w-full h-screen px-6 absolute bottom-10 inset-0 md:pr-40">
           <div className="flex flex-col items-end md:w-1/2">
             <TextGenerateEffect className="text-white text-right text-xl text-pretty font-bold sm:text-2xl md:text-4xl" words="Nos preocupamos de la selección" />
             <TextGenerateEffect className="text-white text-right text-xl text-pretty font-bold sm:text-2xl md:text-4xl" words="Nada nos inspira que construir un sueño juntos." />
@@ -68,7 +67,7 @@ export default function Home() {
       </section>
       <section className="relative flex items-start w-full h-screen">
         <Image src="/img/background/Foto4-compress.webp" alt="logo" width={1920} height={1080} className="w-screen h-screen object-cover object-center" />
-        <div className="flex flex-col justify-center items-end z-20 w-full h-screen px-6 absolute bottom-10 inset-0 md:flex-row-reverse md:justify-between md:items-center md:px-44">
+        <div className="flex flex-col justify-center items-end z-20 w-full h-screen px-6 absolute bottom-10 inset-0 md:flex-row-reverse md:justify-between md:items-center md:px-40">
           <div className="flex flex-col items-end md:w-1/2">
             <TextGenerateEffect className="text-white text-right text-xl text-pretty font-bold pb-6 sm:text-2xl md:text-4xl" words="Diseña tu hogar con Minga hoy" />
             <ul className="flex flex-wrap items-center mt-3 gap-6">
