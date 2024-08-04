@@ -40,7 +40,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="flex justify-center items-center px-8 w-full h-screen md:px-0">
+      <section className="flex justify-center items-center px-6 w-full h-screen md:px-0">
         <div className="flex flex-col justify-center items-end w-full gap-4 md:flex-row-reverse md:justify-between md:items-center md:px-40">
           <TextGenerateEffect className="text-white text-right text-xl text-pretty font-bold pb-6 sm:text-2xl md:text-4xl" words="Proyecto de alto estándar con identidad única" />
           <Button variant="shadow" endContent={<WhatsAppLogo className="w-6 h-6 fill-white" />} as={Link} href="https://wa.me/+56940006843" className="mt-4 font-bold w-72 bg-zinc-950 md:mt-0">Diseña tu hogar con Minga hoy</Button>
@@ -50,7 +50,7 @@ export default function Home() {
         <GallerySwiper />
       </section>
 
-      <section className="flex justify-center items-center w-full px-8 h-screen md:px-0">
+      <section className="flex justify-center items-center w-full px-6 h-screen md:px-0">
         <div className="flex flex-col justify-center items-end w-full gap-4 pl-36 md:flex-row-reverse md:justify-between md:items-center md:px-40">
           <TextGenerateEffect className="text-white text-right text-xl text-pretty font-bold pb-6 sm:text-2xl md:text-4xl" words="Hacemos énfasis en la selección de materiales y la calidad del detalle constructivo" />
         </div>
