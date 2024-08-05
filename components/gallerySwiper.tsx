@@ -17,6 +17,7 @@ import { Autoplay, EffectCoverflow, Navigation, Pagination } from 'swiper/module
 import Image from 'next/image';
 
 const slides = [
+    '/img/gallery/Fotografías Oficiales_-13.webp',
     '/img/gallery/Arquitectura contemporánea en casa de Coquimbo-compress.webp',
     '/img/gallery/Arquitectura moderna en vivienda de Coquimbo-compress.webp',
     '/img/gallery/Casas prefabricadas con diseño único en La Serena-compress.webp',
