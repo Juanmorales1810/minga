@@ -61,7 +61,7 @@ export default function Home() {
         <div className="flex flex-col justify-center items-end z-20 w-full h-screen px-6 absolute bottom-10 inset-0 md:pr-40">
           <div className="flex flex-col items-end md:w-1/2">
             <TextGenerateEffect className="text-white text-right text-xl font-bold text-nowrap sm:text-2xl md:text-4xl" words="Nos preocupamos de la selección" />
-            <TextGenerateEffect delay={1000} className="text-white text-right text-xl text-pretty font-bold sm:text-2xl md:text-4xl" words="Nada nos inspira que construir un sueño juntos." />
+            <TextGenerateEffect delay={1000} className="text-white text-right text-xl text-pretty font-bold sm:text-2xl md:text-4xl" words="de materiales y de cada detalle constructivo." />
             <TextGenerateEffect delay={2400} className="text-white text-right text-base text-pretty font-bold sm:text-xl md:text-2xl" words="Nada nos inspira más  que construir un sueño juntos." />
           </div>
 
