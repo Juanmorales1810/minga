@@ -31,16 +31,18 @@ export default function Home() {
         <div className="flex flex-col justify-around items-end z-20 w-full h-screen px-6 absolute bottom-10 inset-0 md:pr-40">
           <Image src="/img/logo/MINGA LOGO NEGRO PNG.png" alt="logo" width={200} height={100} className="object-cover object-center" priority={true} />
           <div className="flex flex-col items-end md:w-1/3">
-            <h1 className="z-20 pt-8 pl-6 text-xl font-bold text-right md:text-4xl">Bienvenido a Minga</h1>
-            <p className="text-right">
+            <h1 className="text-right">
               Diseño y Construcción
               <br />
               Desde la IV Región. Chile.
-            </p>
+            </h1>
           </div>
         </div>
       </section>
-      <section className="flex justify-center items-center px-6 w-full h-screen md:px-0">
+      <section className="flex flex-col justify-center gap-40 items-end px-6 w-full h-screen md:px-0 md:gap-52">
+        <div className="flex flex-col justify-center items-end w-full gap-4 md:flex-row-reverse md:justify-between md:items-center md:px-40">
+          <Image src="/img/logo/MINGA LOGO NEGRO PNG.png" alt="logo" width={200} height={100} className="object-cover object-center" priority={true} />
+        </div>
         <div className="flex flex-col justify-center items-end w-full gap-4 md:flex-row-reverse md:justify-between md:items-center md:px-40">
           <TextGenerateEffect className="text-white text-right text-xl text-pretty font-bold pb-6 sm:text-2xl md:text-4xl" words="Proyectos de alto estándar con identidad única" />
           <Button variant="shadow" endContent={<WhatsAppLogo className="w-6 h-6 fill-white" />} as={Link} href="https://wa.me/+56940006843" className="mt-4 font-bold w-72 bg-zinc-950 md:mt-0">Diseña tu hogar con Minga hoy</Button>
@@ -50,7 +52,10 @@ export default function Home() {
         <GallerySwiper />
       </section>
 
-      <section className="flex justify-center items-center w-full px-6 h-screen md:px-0">
+      <section className="flex flex-col justify-center gap-40 items-end px-6 w-full h-screen md:px-0 md:gap-52">
+        <div className="flex flex-col justify-center items-end w-full gap-4 md:flex-row-reverse md:justify-between md:items-center md:px-40">
+          <Image src="/img/logo/MINGA LOGO NEGRO PNG.png" alt="logo" width={200} height={100} className="object-cover object-center" priority={true} />
+        </div>
         <div className="flex flex-col justify-center items-end w-full pl-28 md:px-40">
           <TextGenerateEffect className="text-white text-right text-xl text-pretty font-bold sm:text-2xl md:text-4xl" words="Hacemos énfasis en la selección de materiales y" />
           <TextGenerateEffect delay={1000} className="text-white text-right text-xl text-pretty font-bold sm:text-2xl md:text-4xl" words="la calidad del detalle constructivo" />
@@ -71,7 +76,8 @@ export default function Home() {
         <Image src="/img/background/Foto4-compress.webp" alt="logo" width={1920} height={1080} className="w-screen h-screen object-cover object-center" />
         <div className="flex flex-col justify-center items-end z-20 w-full h-screen px-6 absolute bottom-10 inset-0 md:flex-row-reverse md:justify-between md:items-center md:px-40">
           <div className="flex flex-col items-end md:w-1/2">
-            <TextGenerateEffect className="text-white text-right text-xl text-pretty font-bold pb-6 sm:text-2xl md:text-4xl" words="Diseña tu hogar con Minga hoy" />
+            <TextGenerateEffect className="text-white text-right text-xl text-pretty font-bold sm:text-2xl md:text-4xl" words="Diseña tu nuevo hogar con" />
+            <TextGenerateEffect delay={1000} className="text-white text-right text-xl text-pretty font-bold pb-6 sm:text-2xl md:text-4xl" words="CC-MINGA hoy" />
             <ul className="flex flex-wrap items-center mt-3 gap-6">
               <li className="p-2 rounded-full bg-black">
                 <Tooltip content="Hablanos al WhatsApp">
