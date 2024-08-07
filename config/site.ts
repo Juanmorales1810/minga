@@ -1,9 +1,9 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-    name: "Minga",
+    name: "Minga | Diseño y Construcción",
     description:
-        "En Minga, nos especializamos en el diseño y la construcción de casas únicas en entornos naturales impresionantes. Nuestro compromiso es brindarte un hogar que no solo sea estético y funcional sino que también armonice con el paisaje, respetando la belleza y la integridad del medio ambiente. Desde La Serena, Chile, hasta cualquier rincón del país, estamos aquí para construir el hogar de tus sueños.",
+        "En Minga, nos dedicamos al diseño y construcción de casas únicas en entornos naturales. Nos comprometemos a crear hogares estéticos, funcionales y en armonía con el paisaje, respetando la belleza y la integridad del medio ambiente. Desde La Serena, Chile, hasta cualquier rincón del país, construimos el hogar de tus sueños.",
     navItems: [
         {
             label: "Blog",

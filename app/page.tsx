@@ -111,39 +111,6 @@ export default function Home() {
           </div>
           <Button variant="shadow" endContent={<WhatsAppLogo className="w-6 h-6 fill-white" />} as={Link} href="https://wa.me/+56940006843" className="mt-4 font-bold w-72 bg-zinc-950 md:mt-0">Hace tu consulta con nosotros</Button>
         </div>
-        {/* <div className="flex flex-col justify-around items-end z-20 w-full h-screen px-6 absolute bottom-10 inset-0">
-          <div className="w-full p-4 text-center bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-black/70 backdrop-blur-sm dark:border-zinc-700/30">
-            <h4 className="mb-2 text-2xl font-bold text-zinc-50 sm:text-3xl">Diseña tu hogar con Minga hoy</h4>
-            <p className="mb-5 text-md text-zinc-50 sm:text-lg">Detalles claros sobre cómo contactar a Minga por WhatsApp, correo electrónico y a través de un formulario de contacto en línea.
-            </p>
-            <div className="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse">
-              <Button
-                as={Link}
-                href="https://wa.me/+56940006843"
-                className="w-full sm:w-auto bg-green hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-green-700 dark:hover:bg-green-800 dark:focus:ring-green-700"
-                size="lg"
-                startContent={<WhatsAppLogo className="w-7 h-7 fill-white" />}
-              >
-                <div className="text-left rtl:text-right">
-                  <div className="mb-1 text-xs">Contáctanos en</div>
-                  <div className="-mt-1 font-sans text-sm font-semibold">WhatsApp</div>
-                </div>
-              </Button>
-              <Button
-                as={Link}
-                href="https://www.linkedin.com/company/casas-minga-spa/?originalSubdomain=cl"
-                className="w-full sm:w-auto bg-green hover:bg-cyan-700 focus:ring-4 focus:outline-none focus:ring-cyan-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-cyan-700 dark:hover:bg-cyan-800 dark:focus:ring-cyan-700"
-                size="lg"
-                startContent={<LinkedIn className="w-7 h-7 fill-white" />}
-              >
-                <div className="text-left rtl:text-right">
-                  <div className="mb-1 text-xs">Contáctanos en</div>
-                  <div className="-mt-1 font-sans text-sm font-semibold">LinkedIn</div>
-                </div>
-              </Button>
-            </div>
-          </div>
-        </div> */}
       </section>
     </section>
   );
