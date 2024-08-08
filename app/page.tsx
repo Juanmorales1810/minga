@@ -28,8 +28,9 @@ export default function Home() {
         <div className="flex justify-center items-center w-full h-screen">
           <Image src="/img/background/Portada.avif" alt="Imagen principal de Minga" width={1920} height={1080} className="w-screen h-screen object-cover object-center" priority={true} />
         </div>
-        <div className="flex flex-col justify-around items-end z-20 w-full h-screen px-6 absolute bottom-10 inset-0 md:pr-40">
-          <Image src="/img/logo/MINGA LOGO NEGRO PNG.png" alt="logo" width={200} height={100} className="object-cover object-center" priority={true} />
+        <div className="flex flex-col justify-between items-end z-20 w-full h-screen px-6 py-20 absolute md:justify-around bottom-10 inset-0 md:pr-40">
+          <Image src="/img/logo/MINGA LOGO NEGRO PNG.png" alt="logo" width={150} height={75} className="object-cover object-center md:hidden" priority={true} />
+          <Image src="/img/logo/MINGA LOGO NEGRO PNG.png" alt="logo" width={200} height={100} className="object-cover object-center hidden md:block" priority={true} />
           <div className="flex flex-col items-end md:w-1/3">
             <h1 className="text-right">
               Diseño y Construcción
@@ -39,9 +40,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="flex flex-col justify-center gap-40 items-end px-6 w-full h-screen md:px-0 md:gap-52">
+      <section className="flex flex-col justify-center gap-96 items-end px-6 w-full h-screen md:px-0 md:gap-52">
         <div className="flex flex-col justify-center items-end w-full gap-4 md:flex-row-reverse md:justify-between md:items-center md:px-40">
-          <Image src="/img/logo/MINGA LOGO NEGRO PNG.png" alt="logo" width={200} height={100} className="object-cover object-center" priority={true} />
+          <Image src="/img/logo/MINGA LOGO NEGRO PNG.png" alt="logo" width={150} height={75} className="object-cover object-center md:hidden" priority={true} />
+          <Image src="/img/logo/MINGA LOGO NEGRO PNG.png" alt="logo" width={200} height={100} className="object-cover object-center hidden md:block" priority={true} />
         </div>
         <div className="flex flex-col justify-center items-end w-full gap-4 md:flex-row-reverse md:justify-between md:items-center md:px-40">
           <TextGenerateEffect className="text-white text-right text-xl text-pretty font-bold pb-6 sm:text-2xl md:text-4xl" words="Proyectos de alto estándar con identidad única" />
@@ -52,9 +54,10 @@ export default function Home() {
         <GallerySwiper />
       </section>
 
-      <section className="flex flex-col justify-center gap-40 items-end px-6 w-full h-screen md:px-0 md:gap-52">
+      <section className="flex flex-col justify-center gap-96 items-end px-6 w-full h-screen md:px-0 md:gap-52">
         <div className="flex flex-col justify-center items-end w-full gap-4 md:flex-row-reverse md:justify-between md:items-center md:px-40">
-          <Image src="/img/logo/MINGA LOGO NEGRO PNG.png" alt="logo" width={200} height={100} className="object-cover object-center" priority={true} />
+          <Image src="/img/logo/MINGA LOGO NEGRO PNG.png" alt="logo" width={150} height={75} className="object-cover object-center md:hidden" priority={true} />
+          <Image src="/img/logo/MINGA LOGO NEGRO PNG.png" alt="logo" width={200} height={100} className="object-cover object-center hidden md:block" priority={true} />
         </div>
         <div className="flex flex-col justify-center items-end w-full pl-28 md:px-40">
           <TextGenerateEffect className="text-white text-right text-xl text-pretty font-bold sm:text-2xl md:text-4xl" words="Hacemos énfasis en la selección de materiales y" />
