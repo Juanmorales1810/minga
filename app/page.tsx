@@ -31,7 +31,7 @@ export default function Home() {
         <div className="flex flex-col justify-between items-end z-20 w-full h-screen px-6 py-20 absolute md:justify-around bottom-10 inset-0 md:pr-40 md:py-0">
           <Image src="/img/logo/MINGA LOGO NEGRO PNG.png" alt="logo" width={150} height={75} className="object-cover object-center md:hidden" priority={true} />
           <Image src="/img/logo/MINGA LOGO NEGRO PNG.png" alt="logo" width={200} height={100} className="object-cover object-center hidden md:block" priority={true} />
-          <div className="relative flex flex-col items-end -top-20 md:w-1/3">
+          <div className="relative flex flex-col items-end -top-20 md:w-1/3 md:top-0">
             <h1 className="text-right">
               Diseño y Construcción
               <br />
